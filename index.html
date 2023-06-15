@@ -12,20 +12,21 @@
         }
         .big{
             display:flex;
-            
             justify-content: space-around;
             flex-wrap: wrap;
             align-items: center;
-            height: 1000px;
+            height: 1300%;
         }
         .card{
             margin: 10px;
             border: 2px rgba(40, 27, 12, 0.476) solid;
             box-shadow:5px 3px 4px 2px rgba(40, 27, 12, 0.476);
+            transition: transform 1s ease;
         }
         .card:hover{
-            border: 3px rgba(40, 27, 12, 0.476) solid;
-            box-shadow:7px 5px 6px 4px rgba(40, 27, 12, 0.476);
+            /*border: 3px rgba(40, 27, 12, 0.476) solid;*/
+            /*box-shadow:7px 5px 6px 4px rgba(40, 27, 12, 0.476);*/
+            transform: scale(1.05);
         }
         .footer{
             background: url(https://d3mcojo3jv0dbr.cloudfront.net/2017/12/13/04/05/192e5469264d6a1eb9e33d63061c4b92.jpg?w=600&h=300&q=65);
@@ -57,6 +58,10 @@
         .main {
             background-color: bisque;
         }
+        .img {
+            width: 400px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -71,19 +76,19 @@
         <section>
             <div class="big">
                 <div class="card">
-                    <img src="https://centrstroyka.ru/img/cms/9-1-min.png">
+                    <img src="https://centrstroyka.ru/img/cms/9-1-min.png" alt="на рисунке - дом" class="img">
                 </div>
                 <div class="card">
-                    <img src="https://centrstroyka.ru/img/cms/9-1-min.png">
+                    <img src="https://centrstroyka.ru/img/cms/9-1-min.png" alt="на рисунке - дом" class="img">
                 </div>
                 <div class="card">
-                    <img src="https://centrstroyka.ru/img/cms/9-1-min.png">
+                    <img src="https://centrstroyka.ru/img/cms/9-1-min.png" alt="на рисунке - дом" class="img">
                 </div>
                 <div class="card">
-                    <img src="https://centrstroyka.ru/img/cms/9-1-min.png" alt="на рисунке - дом">
+                    <img src="https://centrstroyka.ru/img/cms/9-1-min.png" alt="на рисунке - дом" class="img">
                 </div>
                 <div class="card">
-                    <img src="https://centrstroyka.ru/img/cms/9-1-min.png">
+                    <img src="https://centrstroyka.ru/img/cms/9-1-min.png" alt="на рисунке - дом" class="img">
                 </div>
             </div>
         </section>
