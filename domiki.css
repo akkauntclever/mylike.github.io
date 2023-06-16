@@ -1,36 +1,168 @@
 *{
     margin:0;
     padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(73, 71, 69);
+}
+.header{
+    background-color: rgb(252, 203, 143);
+}
+.head1{
+    border-bottom: 1px rgb(134, 81, 27) solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+}
+.imgg {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+.img1 {
+    width: 220px;
+}
+.h1{
+    padding: 20px;
+    flex-grow: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.h {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    padding: 10px;
+
+}
+.h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.h2-2 {
+    color: aliceblue;
+    text-decoration: underline;
+    padding: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background: linear-gradient(to left, rgb(252, 203, 143), rgba(213, 116, 20, 0.7) 10%, rgba(213, 116, 20, 0.7) 90%, rgb(252, 203, 143))
+}
+.ul {
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(207, 0, 0, 0.3);
+    border-radius: 5px;
+
+
+}
+.lia{
+    text-decoration: none;
+}
+.li{
+    padding: 10px;
+    color: rgb(73, 71, 69);
+}
+.li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-decoration: underline;
+    color: rgb(37, 36, 35);
+}
+.s1 {
+    background-color: rgb(255, 249, 242);
+    border-bottom: 1px rgb(134, 81, 27) solid;
+}
+.s1-11 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.s1-1 {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.a2 {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    color:rgb(43, 40, 40);
+}
+.a2:hover {
+    font-weight: bold;
+    color: rgb(78, 76, 76);
+    text-decoration: underline;
+}
+.s2 {
+    background-color: rgb(242, 222, 198);
+}
+.s2-2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.t1{
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+    padding-left: 70px;
+    font-size: 50px;
+}
+.t1-1{
+    color:rgb(47, 45, 37);
 }
 .big{
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    height: 1300%;
+    height: 1700%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.card{
-    margin: 10px;
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-0{
+    margin: 20px;
     border: 2px rgba(40, 27, 12, 0.476) solid;
     box-shadow:5px 3px 4px 2px rgba(40, 27, 12, 0.476);
-    transition: transform 1s ease;
+    transition: transform 0.7s ease;
 }
-.card:hover{
+.card-0:hover{
     /*border: 3px rgba(40, 27, 12, 0.476) solid;*/
     /*box-shadow:7px 5px 6px 4px rgba(40, 27, 12, 0.476);*/
     transform: scale(1.05);
 }
+.img {
+    height: 290px;
+}
+.card-2 {
+    border: 1px rgb(37, 36, 35);
+    border-top: 0;
+}
 .footer{
     background: url(https://d3mcojo3jv0dbr.cloudfront.net/2017/12/13/04/05/192e5469264d6a1eb9e33d63061c4b92.jpg?w=600&h=300&q=65);
-}
-.header{
-    background: url(https://www.funnyart.club/uploads/posts/2021-12/thumbs/1640183769_91-www-funnyart-club-p-interesnie-foni-dlya-prezentatsii-92.jpg);
-    background-size:contain;
-}
-.ins {
-    color: aliceblue;
 }
 .card-1 {
     display:flex;
@@ -39,20 +171,6 @@
     align-items: center;
     height: 40px;
 }
-.head1{
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.h1{
-    color:rgb(40, 27, 12);
-}
-.main {
-    background-color: bisque;
-}
-.img {
-    width: 400px;
-    height: auto;
+.ins {
+    color: aliceblue;
 }
