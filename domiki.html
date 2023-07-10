@@ -47,9 +47,9 @@
                 <div class="big">
                     <div class="card">
                         <div class="card-0">
-                            <a href="domiki/domik1.html" target="_blank">
-                            <img src="https://centrstroyka.ru/img/cms/9-1-min.png" alt="на рисунке - дом" class="img">
-                            </a>
+                            <!-- <a href="domiki/domik1.html" target="_blank"> -->
+                            <img data-enlargeable src="https://centrstroyka.ru/img/cms/9-1-min.png" alt="на рисунке - дом" class="img">
+                            <!-- </a> -->
                         </div>
                         <div class="card-2">
                             Двухэтажный дом с балкончиком и гаражиком. Другого такого тут нет...
@@ -57,9 +57,9 @@
                     </div>
                     <div class="card">
                         <div class="card-0">
-                            <a href="domiki/domik2.html" target="_blank">
-                                <img src="https://mstkstroi.ru/wp-content/uploads/2021/12/dom3.png" alt="на рисунке - дом" class="img">
-                            </a>
+                            <!-- <a href="domiki/domik2.html" target="_blank"> -->
+                                <img data-enlargeable src="https://mstkstroi.ru/wp-content/uploads/2021/12/dom3.png" alt="на рисунке - дом" class="img">
+                            <!-- </a> -->
                         </div>
                         <div class="card-2">
                             
@@ -67,9 +67,9 @@
                     </div>
                     <div class="card">
                         <div class="card-0">
-                            <a href="domiki/domik3.html" target="_blank">
-                                <img src="pho1.png" alt="на рисунке - дом" class="img">
-                            </a>
+                            <!-- <a href="domiki/domik3.html" target="_blank"> -->
+                                <img data-enlargeable src="pho1.png" alt="на рисунке - дом" class="img">
+                            <!-- </a> -->
                         </div>
                         <div class="card-2">
                             
@@ -77,9 +77,9 @@
                     </div>
                     <div class="card">
                         <div class="card-0">
-                            <a href="domiki/domik4.html" target="_blank">
-                                <img src="pho2.png" alt="на рисунке - дом" class="img">
-                            </a>
+                            <!-- <a href="domiki/domik4.html" target="_blank"> -->
+                                <img data-enlargeable src="pho2.png" alt="на рисунке - дом" class="img">
+                            <!-- </a> -->
                         </div>
                         <div class="card-2">
                             
@@ -87,9 +87,9 @@
                     </div>
                     <div class="card">
                         <div class="card-0">
-                            <a href="domiki/domik5.html" target="_blank">
-                                <img src="pho3.png" alt="на рисунке - дом" class="img">
-                            </a>
+                            <!-- <a href="domiki/domik5.html" target="_blank"> -->
+                                <img data-enlargeable src="pho3.png" alt="на рисунке - дом" class="img">
+                            <!-- </a> -->
                         </div>
                         <div class="card-2">
                             
@@ -106,5 +106,47 @@
             </div>
         </div>
     </footer>
+    <script src="jquery.js"></script>
+    <script>
+        $('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
+           var src = $(this).attr('src');
+           var modal;
+         
+           function removeModal() {
+             modal.remove();
+             $('body').off('keyup.modal-close');
+           }
+           modal = $('<div>').css({
+             background: 'RGBA(0,0,0,.5) url(' + src + ') no-repeat center',
+             backgroundSize: 'contain',
+             width: '100%',
+             height: '100%',
+             position: 'fixed',
+             zIndex: '10000',
+             top: '0',
+             left: '0',
+             cursor: 'zoom-out'
+           }).click(function() {
+             removeModal();
+           }).appendTo('body');
+           //handling ESC
+           $('body').on('keyup.modal-close', function(e) {
+             if (e.key === 'Escape') {
+               removeModal();
+             }
+           });
+         });
+         </script>
 </body>
 </html>
+<!-- Картинка на весь экран -->
+
+<!-- body{height:100%;
+    width:100%;
+    background-image:url(image.jpg);/*your background image*/
+    background-repeat:no-repeat;/*we want to have one single image not a repeated one*/
+    background-size:cover;/*this sets the image to fullscreen covering the whole screen*/
+    /*css hack for ie*/
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.image.jpg',sizingMethod='scale');
+    -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image.jpg',sizingMethod='scale')";
+ } -->
